@@ -27,7 +27,19 @@ var DIGIT_VALUES = {
 };
 
 var translateRomanNumeral = function(romanNumeral) {
+  for (key in DIGIT_VALUES){
+
+    while(key > romanNumeral)
+    romanNumeral += key;
+    romanNumeral -= key;
+  }
 // TODO: Implement me!
 /* START SOLUTION */
+//input obj
+// iterate throug the object
+
+// output number
+
   /* END SOLUTION */
+  return romanNumeral;
 };
